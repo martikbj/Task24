@@ -3,6 +3,7 @@
 	"last_name": "Marais",
 	"date_of_birth": "12 June 1985",
 	"title": "Lecturer",
+	"link":"https://google.com",
 	"experience": 
 	[
 		{
@@ -45,13 +46,6 @@
 	],
 	"education" : 
 	[
-		{
-			"qualification" : "Master of Technology",
-			"start_year" : "2012",
-			"end_year" : "2013",
-			"institution" : "Nelson Mandela Metropolitan University",
-			"description" : "Dissertation topic: Guidelines for the use of the Indie approach in game development projects in the context of a capstone experience"
-		},
 		{
 			"qualification" : "Master of Technology",
 			"start_year" : "2012",
