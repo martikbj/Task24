@@ -1,0 +1,11 @@
+
+{
+    "name" : "name", 
+    "dateOfBirth" : "90.10.10",
+    "title" : "Full stack Java developer",
+    "education" : ["Some education", "Other education"],
+    "experience" : ["Current experience", "prior experience"], 
+    "proLinks" : ["www.linkedin.com", "www.githuib.com"], 
+    "technologies" : ["Some technology", "Other technology"]
+
+}
