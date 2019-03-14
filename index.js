@@ -9,6 +9,8 @@ const port = 8080
 let rawData = fs.readFileSync("data.json");
 const data = JSON.parse(rawData);
 
+app.use(express.static(path.join(__dirname + "/resources")));
+
 // pug
 app.set('view engine', 'pug')
 
@@ -18,5 +20,7 @@ app.get('/data', (req, res) => res.send(data));
 app.get('/', (req, res) => {
    res.render('main', data)
 });
+
+
 
 app.listen(process.env.PORT || 8080)

@@ -2,8 +2,7 @@
 	"first_name": "Craig",
 	"last_name": "Marais",
 	"date_of_birth": "12 June 1985",
-	"title": "Lecturer",
-	"link":"https://google.com",
+	"title": "Full Stack Java developer",
 	"experience": 
 	[
 		{
@@ -52,6 +51,30 @@
 			"end_year" : "2013",
 			"institution" : "Nelson Mandela Metropolitan University",
 			"description" : "Dissertation topic: Guidelines for the use of the Indie approach in game development projects in the context of a capstone experience"
+		}
+	], 
+	"proLinks" : 
+	[ 
+		{
+			"title" : "linkedIn",
+			"linken" : "www.linkedin.com",
+			"description" : "professional CV"
+		}, 
+		{
+			"title" : "gitHub",
+			"linken" : "www.github.com",
+			"description" : "professional repositorty"
+		}
+	], 
+	"technologies" : 
+	[
+		{
+			"name" : "Name of a Technology", 
+			"description" : "Describing the technology"
+		},
+		{
+			"name" : "Name of a Technology", 
+			"description" : "Describing the technology"
 		}
 	]
 }

@@ -1,12 +1,13 @@
 html
 	title #{first_name}'s CV Site
-	head
+	head		
 		block scripts
 			link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css", integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS", crossorigin="anonymous")
 			link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css", integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r", crossorigin="anonymous")
 			script(src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous")
 			script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
-	body
+	
+	body(style="background-image: url('http://wallpaperheart.com/wp-content/uploads/2018/04/globe-professional-background-images-hd.jpg'); background-size:100% auto; ")
 		block content
 			h1(style="text-align:center") #{first_name} #{last_name}
 			hr
@@ -14,6 +15,7 @@ html
 			hr
 			div(class="card-group")
 				each job in experience
+
 					div(class = "card" style="text-align:center; border-radius:15px; border-width:15px; border-color:cyan") 
 						div(class="card-body")
 							h5(class ="card-title") #{job.title}
@@ -23,13 +25,23 @@ html
 			h2(style ="text-align:center") Education
 			hr
 			div(class="card-group")
+
 				each school in education
 					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:15px; border-color:cyan")
 						div(class="card-body")
 							h5(class ="card-title") #{school.qualification}
 							p(class ="card-content") #{school.institution}
 							p(class ="card-text") #{school.description}
-			hr
+
+			h3(class="text-center") Links
+						div(class="row")
+							each link in proLinks
+								div(class = "card" style="width: 18rem;")
+									div(class="card-body")
+										h5(class ="card-title") #{link.title}
+										p(class ="card-content") #{link.linken}
+										p(class ="card-text") #{link.description}
+							
 		block foot
 			footer
 				div(class="footer-copyright fixed-bottom text-center") Copyright Craig Marais 2019
