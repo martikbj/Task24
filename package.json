@@ -1,0 +1,15 @@
+{
+  "name": "gruppeoppgave_cv",
+  "version": "1.0.0",
+  "description": "Cv generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Bjerkeengen og Trude Hjelmeland",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
