@@ -9,11 +9,22 @@ html
 	
 	body(style="background-image: url('http://wallpaperheart.com/wp-content/uploads/2018/04/globe-professional-background-images-hd.jpg'); background-size:100% auto; ")
 		block content
-			h1(style="text-align:center") #{first_name} #{last_name}
+			hr
+			div(class="text-center")
+				img(src="https://i2-prod.mirror.co.uk/incoming/article10263400.ece/ALTERNATES/s1200/PROD-Kim-Jong-Un.jpg" class="img-fluid" alt="profil_picture" style="max-width: 30%; height: auto;")
+			hr
+			div(class="card-group" style="opacity: .5;")
+				div(class = "card" style="text-align:center; border-radius:15px; border-width:15px; border-color:cyan") 
+						div(class="card-body")
+							h5(class ="card-title" style="font-size: 40px") #{title}
+							p(class="card-content" style="font-size: 30px") #{first_name} #{last_name}
+							p(class="card-text") #{date_of_birth}	
+
+			
 			hr
 			h1(style="text-align:center") Experience
 			hr
-			div(class="card-group")
+			div(class="card-group" style="opacity: .7;")
 				each job in experience
 
 					div(class = "card" style="text-align:center; border-radius:15px; border-width:15px; border-color:cyan") 
@@ -22,9 +33,9 @@ html
 							p(class="card-content") #{job.employer}
 							p(class="card-text") #{job.description}	
 			hr
-			h2(style ="text-align:center") Education
+			h1(style ="text-align:center") Education
 			hr
-			div(class="card-group")
+			div(class="card-group" style="opacity: .7;")
 
 				each school in education
 					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:15px; border-color:cyan")
@@ -33,14 +44,16 @@ html
 							p(class ="card-content") #{school.institution}
 							p(class ="card-text") #{school.description}
 
-			h3(class="text-center") Links
-						div(class="row")
-							each link in proLinks
-								div(class = "card" style="width: 18rem;")
-									div(class="card-body")
-										h5(class ="card-title") #{link.title}
-										p(class ="card-content") #{link.linken}
-										p(class ="card-text") #{link.description}
+			h2(class="text-center") Links
+			hr
+			div(class="card-group" style="opacity: .7;")
+
+						each link in proLinks
+							div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:15px; border-color:cyan")
+								div(class="card-body")
+									h5(class ="card-title") #{link.title}
+									p(class ="card-content") #{link.linken}
+									p(class ="card-text") #{link.description}
 							
 		block foot
 			footer
