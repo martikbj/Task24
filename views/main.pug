@@ -1,0 +1,44 @@
+html
+	title #{first_name}'s CV Site
+	
+	head
+		block scripts
+			link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css", integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS", crossorigin="anonymous")
+			link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css", integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r", crossorigin="anonymous")
+			script(src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous")
+			script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+	body
+		block content
+			h1(class="text-center") #{first_name} #{last_name}
+			div(class="row")
+				each job in experience
+					div(class = "card" style="width: 18rem;") 
+						div(class="card-body")
+							h5(class ="card-title" ) #{job.title}
+							p(class="card-content") #{job.employer}
+							p(class="card-text") #{job.description}	
+			h2 Education
+			div(class="row")
+				each school in education
+					div(class = "card" style="width: 18rem;")
+						div(class="card-body")
+							h5(class ="card-title") #{school.qualification}
+							p(class ="card-content") #{school.institution}
+							p(class ="card-text") #{school.description}
+		block foot
+			footer
+				div(class="footer-copyright fixed-bottom text-center") Copyright Craig Marais 2019
+
+					
+
+
+
+
+
+
+
+
+
+
+
+

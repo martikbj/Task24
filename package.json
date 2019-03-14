@@ -1,15 +1,17 @@
 {
-  "name": "gruppeoppgave_cv",
+  "name": "cv_site",
   "version": "1.0.0",
-  "description": "Cv generator",
+  "description": "A Site to host a CV in html and be flashy",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Martin Bjerkeengen og Trude Hjelmeland",
+  "author": "Craig Marais",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10",
+    "pug": "^2.0.3"
   }
 }
