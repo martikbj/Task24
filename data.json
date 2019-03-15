@@ -1,3 +1,4 @@
+
 {
 	"first_name": "Craig",
 	"last_name": "Marais",
@@ -58,12 +59,12 @@
 		{
 			"title" : "linkedIn",
 			"linken" : "www.linkedin.com",
-			"description" : "professional CV"
+			"imgSRC" : "https://ulidigitalmarketing.blob.core.windows.net/ulidcnc/2018/12/2000px-Linkedin_Shiny_Icon.svg_.png"
 		}, 
 		{
 			"title" : "gitHub",
 			"linken" : "www.github.com",
-			"description" : "professional repositorty"
+			"imgSRC" : "https://ulidigitalmarketing.blob.core.windows.net/ulidcnc/2018/12/2000px-Linkedin_Shiny_Icon.svg_.png"
 		}
 	], 
 	"technologies" : 
