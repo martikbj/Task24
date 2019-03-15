@@ -4,6 +4,7 @@
 	"last_name": "Marais",
 	"date_of_birth": "12 June 1985",
 	"title": "Full Stack Java developer",
+	"email" : "Trude.Hjelmeland@no.experis.com",
 	"experience": 
 	[
 		{
@@ -58,24 +59,39 @@
 	[ 
 		{
 			"title" : "linkedIn",
-			"linken" : "www.linkedin.com",
+			"linken" : "https://www.linkedin.com/",
 			"imgSRC" : "https://ulidigitalmarketing.blob.core.windows.net/ulidcnc/2018/12/2000px-Linkedin_Shiny_Icon.svg_.png"
 		}, 
 		{
 			"title" : "gitHub",
-			"linken" : "www.github.com",
-			"imgSRC" : "https://ulidigitalmarketing.blob.core.windows.net/ulidcnc/2018/12/2000px-Linkedin_Shiny_Icon.svg_.png"
+			"linken" : "https://www.github.com",
+			"imgSRC" : "githubLogo.png"
 		}
 	], 
 	"technologies" : 
 	[
 		{
 			"name" : "Name of a Technology", 
-			"description" : "Describing the technology"
+			"description" : "Describing the technology", 
+			"img" : ""
 		},
 		{
 			"name" : "Name of a Technology", 
-			"description" : "Describing the technology"
+			"description" : "Describing the technology",
+			"img" : ""
+		}
+	], 
+	"publications" : 
+	[
+		{
+			"title" : "",
+			"description" : "",
+			"url" : ""
+		},
+		{
+			"title" : "",
+			"description" : "",
+			"url" : ""
 		}
 	]
 }
