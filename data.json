@@ -1,81 +1,118 @@
 
+
 {
-	"first_name": "Craig",
-	"last_name": "Marais",
-	"date_of_birth": "12 June 1985",
+
+	"first_name": "Martin",
+
+	"last_name": "Bjerkeengen",
+
+	"date_of_birth": "03 December 1994",
+
 	"title": "Full Stack Java developer",
+
+	"email" : "martin.bjerkeengen@no.experis.com",
+
 	"experience": 
+
 	[
+
 		{
-			"title": "Lecturer",
-			"employer": "Noroff",
-			"start_date":"September 2018",
+
+			"title": "Full Stack Java Programmer",
+
+			"employer": "Experis Academy",
+
+			"start_date":"February 2019",
+
 			"end_date":"",
+
 			"city": "Oslo",
+
 			"country": "Norway",
-			"description": "Primary instructor for a number of short course offerings."
+
+			"description": "Programming with an emphasis on fullstack"
+
+
+
+		}
+
+	],
+
+	"education" : 
+
+	[
+
+		{
+
+			"qualification" : "Bachelor in Use, Design and Interaction",
+
+			"start_year" : "2015",
+
+			"end_year" : "2018",
+
+			"institution" : "Universitetet i Oslo",
+
+			"description" : "Degree with a focus on creating solutions using tangible designs"
+
+		}
+
+	], 
+
+	"proLinks" : 
+
+	[ 
+
+		{
+
+			"title" : "linkedIn",
+
+			"linken" : "https://www.linkedin.com/in/martin-bjerkeengen-190959152",
+
+			"imgSRC" : "https://ulidigitalmarketing.blob.core.windows.net/ulidcnc/2018/12/2000px-Linkedin_Shiny_Icon.svg_.png"
+
+		}, 
+
+		{
+
+			"title" : "gitHub",
+
+			"linken" : "https://www.github.com/martikbj",
+
+			"imgSRC" : "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
+
+		}
+
+	], 
+
+	"technologies" : 
+
+	[
+
+		{
+
+			"name" : "Arduino", 
+
+			"description" : "For creating simple prototypes for testing", 
+
+			"img" : ""
 
 		},
+
 		{
-			"title": "Project Supervisor",
-			"employer": "Nelson Mandela University",
-			"start_date":"May 2018",
-			"end_date":"September 2018",
-			"city": "Port Elizabeth",
-			"country": "South Africa",
-			"description": "Supervisor for six groups of 3rd year projects in the School of ICT."
-		},
-		{
-			"title": "Programmer",
-			"employer": "Nelson Mandela University",
-			"start_date":"July 2017",
-			"end_date":"March 2018",
-			"city": "Port Elizabeth",
-			"country": "South Africa",
-			"description": "EEESCHEP Project website and content development for the eNtsa group."
-		},
-		{
-			"title": "Programmer",
-			"employer": "Fuzzy Logic",
-			"start_date":"February 2016",
-			"end_date":"May 2016",
-			"city": "George",
-			"country": "South Africa",
-			"description": "I worked primarily in C# on a bespoke project for an international client (subject to NDA)."
+
+			"name" : "Raspberry Pi", 
+
+			"description" : "Miniature computer designed for amateur projects",
+
+			"img" : ""
+
 		}
-	],
-	"education" : 
-	[
-		{
-			"qualification" : "Master of Technology",
-			"start_year" : "2012",
-			"end_year" : "2013",
-			"institution" : "Nelson Mandela Metropolitan University",
-			"description" : "Dissertation topic: Guidelines for the use of the Indie approach in game development projects in the context of a capstone experience"
-		}
+
 	], 
-	"proLinks" : 
-	[ 
-		{
-			"title" : "linkedIn",
-			"linken" : "www.linkedin.com",
-			"imgSRC" : "https://ulidigitalmarketing.blob.core.windows.net/ulidcnc/2018/12/2000px-Linkedin_Shiny_Icon.svg_.png"
-		}, 
-		{
-			"title" : "gitHub",
-			"linken" : "www.github.com",
-			"imgSRC" : "https://ulidigitalmarketing.blob.core.windows.net/ulidcnc/2018/12/2000px-Linkedin_Shiny_Icon.svg_.png"
-		}
-	], 
-	"technologies" : 
+
+	"publications" : 
+
 	[
-		{
-			"name" : "Name of a Technology", 
-			"description" : "Describing the technology"
-		},
-		{
-			"name" : "Name of a Technology", 
-			"description" : "Describing the technology"
-		}
 	]
+
 }
