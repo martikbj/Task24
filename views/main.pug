@@ -9,7 +9,7 @@ html
 	
 	body(style="background-image: url('http://wallpaperheart.com/wp-content/uploads/2018/04/globe-professional-background-images-hd.jpg'); background-size:100% auto; ")
 		block content
-			nav.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light
+			nav.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light(style="border-radius:25px; background-color:black")
 				a.navbar-brand(href='#') Glorious Navbar
 				button.navbar-toggler(aria-expanded='false', aria-controls='navbarText', aria-label='Toggle navigation', type='button', data-toggle='collapse', data-target='#navbarText')
 					span.navbar-toggler-icon
@@ -21,6 +21,8 @@ html
 							a.nav-link(href='#Experience') Experience
 						li.nav-item
 							a.nav-link(href='#Education') Education
+						li.nav-item
+							a.nav-link(href='#Links') Links
 					span.navbar-text #{first_name}'s CV Site
 
 			h1(id="Name" style="text-align:center") #{first_name} #{last_name}
@@ -30,8 +32,8 @@ html
 			div(class="card-group")
 				each job in experience
 
-					div(class = "card" style="text-align:center; border-radius:15px; border-width:15px; border-color:blue") 
-						div(class="card-body" style="background-color:cyan")
+					div(class = "card" style="text-align:center; border-radius:15px; border-width:5px; border-color:black") 
+						div(class="card-body" style="background-color:cyan; border-radius:10px")
 							h5(class ="card-title") #{job.title}
 							p(class="card-content") #{job.employer}
 							p(class="card-text") #{job.description}	
@@ -41,13 +43,13 @@ html
 			div(class="card-group")
 
 				each school in education
-					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:15px; border-color:blue")
-						div(class="card-body" style="background-color:cyan")
+					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:black")
+						div(class="card-body" style="background-color:cyan; border-radius:15px; border-width:5px; border-color:black")
 							h5(class ="card-title") #{school.qualification}
 							p(class ="card-content") #{school.institution}
 							p(class ="card-text") #{school.description}
 
-			h3(class="text-center") Links
+			h3(class="text-center" id="Links") Links
 						div(class="row")
 							each link in proLinks
 								div(class = "card" style="width: 18rem;")
