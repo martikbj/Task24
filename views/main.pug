@@ -4,10 +4,21 @@ html
 		block scripts
 			link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css", integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS", crossorigin="anonymous")
 			link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css", integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r", crossorigin="anonymous")
+			link(rel="stylesheet", href="style.css", type="text/css")
 			script(src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous")
 			script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
 	
-	body(style="background-image: url('http://wallpaperheart.com/wp-content/uploads/2018/04/globe-professional-background-images-hd.jpg'); background-size:100% auto; ")
+	body(style="background-image: url('http://wallpaperheart.com/wp-content/uploads/2018/04/globe-professional-background-images-hd.jpg'); background-size:100% auto; margin-left: 200px; padding: 0px 10px;")
+		
+		div(class="sidenav" style="opacity: .7; height: 100%; width: 200px; position: fixed; z-index: 1; top: 0; left: 0; background-color: blue; overflow-x: hidden; padding-top: 20px;")
+			img(src="https://i2-prod.mirror.co.uk/incoming/article10263400.ece/ALTERNATES/s1200/PROD-Kim-Jong-Un.jpg" class="rounded mx-auto d-block" alt="profil_picture" style="max-width: 70%; height: auto;")
+			hr
+			hr
+			a(style="opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 20px; color: black; display: block;") #{title}
+			a(style="opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 15px; color: black; display: block;") #{first_name} #{last_name}
+			a(style="opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 10px; color: black; display: block;") #{date_of_birth}
+		
+		
 		block content
 			hr
 			div(class="text-center")
@@ -44,16 +55,18 @@ html
 							p(class ="card-content") #{school.institution}
 							p(class ="card-text") #{school.description}
 
-			h2(class="text-center") Links
+			
 			hr
 			div(class="card-group" style="opacity: .7;")
 
 						each link in proLinks
 							div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:15px; border-color:cyan")
+								img( class="card-img-top smallimg mx-auto" src=link.imgSRC style="height: 15%; width: 15%; padding: 6px 8px 6px 16px;")
 								div(class="card-body")
-									h5(class ="card-title") #{link.title}
-									p(class ="card-content") #{link.linken}
-									p(class ="card-text") #{link.description}
+									h5(class ="card-title") 
+									
+									a(href=link.linken class="card-link") #{link.linken}
+									
 							
 		block foot
 			footer
