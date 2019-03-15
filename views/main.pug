@@ -9,51 +9,54 @@ html
 	
 	body(style="background-image: url('http://wallpaperheart.com/wp-content/uploads/2018/04/globe-professional-background-images-hd.jpg'); background-size:100% auto; ")
 		block content
-			hr
-			div(class="text-center")
-				img(src="https://i2-prod.mirror.co.uk/incoming/article10263400.ece/ALTERNATES/s1200/PROD-Kim-Jong-Un.jpg" class="img-fluid" alt="profil_picture" style="max-width: 30%; height: auto;")
-			hr
-			div(class="card-group" style="opacity: .5;")
-				div(class = "card" style="text-align:center; border-radius:15px; border-width:15px; border-color:cyan") 
-						div(class="card-body")
-							h5(class ="card-title" style="font-size: 40px") #{title}
-							p(class="card-content" style="font-size: 30px") #{first_name} #{last_name}
-							p(class="card-text") #{date_of_birth}	
+			nav.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light(style="border-radius:25px; background-color:black")
+				a.navbar-brand(href='#') Glorious Navbar
+				button.navbar-toggler(aria-expanded='false', aria-controls='navbarText', aria-label='Toggle navigation', type='button', data-toggle='collapse', data-target='#navbarText')
+					span.navbar-toggler-icon
+				#navbarText.collapse.navbar-collapse
+					ul.navbar-nav.mr-auto
+						li.nav-item
+							a.nav-link(href='#') Home 
+						li.nav-item
+							a.nav-link(href='#Experience') Experience
+						li.nav-item
+							a.nav-link(href='#Education') Education
+						li.nav-item
+							a.nav-link(href='#Links') Links
+					span.navbar-text #{first_name}'s CV Site
 
-			
+			h1(id="Name" style="text-align:center") #{first_name} #{last_name}
 			hr
-			h1(style="text-align:center") Experience
+			h1(id="Experience" style="text-align:center") Experience
 			hr
-			div(class="card-group" style="opacity: .7;")
+			div(class="card-group")
 				each job in experience
 
-					div(class = "card" style="text-align:center; border-radius:15px; border-width:15px; border-color:cyan") 
-						div(class="card-body")
+					div(class = "card" style="text-align:center; border-radius:15px; border-width:5px; border-color:black") 
+						div(class="card-body" style="background-color:cyan; border-radius:10px")
 							h5(class ="card-title") #{job.title}
 							p(class="card-content") #{job.employer}
 							p(class="card-text") #{job.description}	
 			hr
-			h1(style ="text-align:center") Education
+			h2(id="Education" style ="text-align:center") Education
 			hr
-			div(class="card-group" style="opacity: .7;")
+			div(class="card-group")
 
 				each school in education
-					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:15px; border-color:cyan")
-						div(class="card-body")
+					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:black")
+						div(class="card-body" style="background-color:cyan; border-radius:15px; border-width:5px; border-color:black")
 							h5(class ="card-title") #{school.qualification}
 							p(class ="card-content") #{school.institution}
 							p(class ="card-text") #{school.description}
 
-			h2(class="text-center") Links
-			hr
-			div(class="card-group" style="opacity: .7;")
-
-						each link in proLinks
-							div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:15px; border-color:cyan")
-								div(class="card-body")
-									h5(class ="card-title") #{link.title}
-									p(class ="card-content") #{link.linken}
-									p(class ="card-text") #{link.description}
+			h3(class="text-center" id="Links") Links
+						div(class="row")
+							each link in proLinks
+								div(class = "card" style="width: 18rem;")
+									div(class="card-body")
+										h5(class ="card-title") #{link.title}
+										a(class ="card-content") #{link.linken}
+										p(class ="card-text") #{link.description}
 							
 		block foot
 			footer
